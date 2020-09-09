@@ -9,7 +9,6 @@ const StyledDiv = styled.div`
   height: 100px;
   margin: 0 auto;
   margin-top: 10px;
-  display: table;
   text-align: center;
 `
 
@@ -24,7 +23,7 @@ export default function Card({ title, link, icon, color, text }) {
   return (
     <StyledDiv style={{ backgroundColor: color }}>
       <StyledIcon>
-        <img src={icon} />
+        <img src={icon} alt="icon" />
       </StyledIcon>
       <Link to={link} style={{ color: text, textDecoration: "none" }}>
         <h1>{title}</h1>
