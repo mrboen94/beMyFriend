@@ -3,10 +3,12 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const StyledDiv = styled.div`
+  display: flex;
+  flex-direction: column;
   background-color: #2e2e2e;
   border-radius: 8px;
   width: 100%;
-  height: 100px;
+  height: 200px;
   margin: 0 auto;
   margin-top: 10px;
   text-align: center;
@@ -23,7 +25,7 @@ export default function Card({ title, link, icon, color, text }) {
   return (
     <StyledDiv style={{ backgroundColor: color }}>
       <StyledIcon>
-        <img src={icon} alt="icon" />
+        <img src={icon} />
       </StyledIcon>
       <Link to={link} style={{ color: text, textDecoration: "none" }}>
         <h1>{title}</h1>
