@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: #2e2e2e;
   border-radius: 8px;
   width: 100%;
@@ -18,6 +19,7 @@ const StyledIcon = styled.div`
   height: 100%;
   width 100px;
   padding: .5em;
+  padding-top: 1em;
   margin: 0 auto;
 `
 
