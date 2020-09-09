@@ -1,21 +1,42 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Card from "../components/Card"
+import Data from "../data/data.json"
+import styled from "styled-components"
+import { Link } from "gatsby"
+
+const ImageWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 200px;
+  margin: 0 auto;
+  color: white;
+`
+
+const socialData = Data.social
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <SEO title="Add me" />
+    <ImageWrapper>
       <Image />
+    </ImageWrapper>
+    <div style={{ maxWidth: `100%`, marginBottom: `1.45rem` }}>
+      {socialData.map(data => (
+        <Link to={data.link} style={{ textDecoration: "none" }}>
+          <Card
+            title={data.title}
+            link={data.link}
+            icon={data.icon}
+            color={data.backgroundColor}
+            text={data.textColor}
+          />
+        </Link>
+      ))}
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 

@@ -1,0 +1,51 @@
+{
+    "social": [
+    {
+        "id": 1,
+        "title": "LinkedIn",
+        "link": "https://www.linkedin.com/in/boemathias/",
+        "icon": "linkedin.png",
+        "backgroundColor": "white",
+        "textColor": "#2867b2"
+    },
+    {
+        "id": 3,
+        "title": "Facebook",
+        "link": "https://www.facebook.com/mathias.boe",
+        "icon": "facebook.png",
+        "backgroundColor": "#4267B2",
+        "textColor": "white"
+    },
+    {
+        "id": 2,
+        "title": "Snapchat",
+        "link": "https://www.snapchat.com/add/mrboen94",
+        "icon": "snapchat.png",
+        "backgroundColor": "#FFFC00",
+        "textColor": "black"
+    },
+    {
+        "id": 7,
+        "title": "Spotify",
+        "link": "https://www.spotify.com/boemathias",
+        "icon": "spotify.png",
+        "backgroundColor": "#1DB954",
+        "textColor": "white"
+    },
+    {
+        "id": 5,
+        "title": "Instagram",
+        "link": "https://www.instagram.com/boemathias",
+        "icon": "instagram.png",
+        "backgroundColor": "white",
+        "textColor": "black"
+    },
+    {
+        "id": 4,
+        "title": "Untappd",
+        "link": "https://untappd.com/user/mrboen94",
+        "icon": "untappd.svg",
+        "backgroundColor": "white",
+        "textColor": "#fc0"
+    }]
+}
