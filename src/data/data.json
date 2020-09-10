@@ -52,8 +52,8 @@
         "id": 7,
         "title": "Instagram",
         "link": "https://www.instagram.com/boemathias",
-        "icon": "instagram.png",
-        "backgroundcolor": "white",
+        "icon": "instagram3.png",
+        "backgroundColor": "#FF1690",
         "textColor": "white"
     },
     {
@@ -69,8 +69,8 @@
         "title": "Untappd",
         "link": "https://untappd.com/user/mrboen94",
         "icon": "untappd.svg",
-        "backgroundColor": "white",
-        "textColor": "#fc0"
+        "backgroundColor": "#fc0",
+        "textColor": "white"
     },
     {
         "id": 10,
