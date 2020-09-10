@@ -9,7 +9,23 @@
         "textColor": "#2867b2"
     },
     {
+        "id": 2,
+        "title": "Web CV",
+        "link": "https://www.aasgard.io",
+        "icon": "logo.png",
+        "backgroundColor": "white",
+        "textColor": "black"
+    },
+    {
         "id": 3,
+        "title": "Mail",
+        "link": "mailto:mrboen94@gmail.com",
+        "icon": "mail.png",
+        "backgroundColor": "white",
+        "textColor": "black"
+    },
+    {
+        "id": 4,
         "title": "Facebook",
         "link": "https://www.facebook.com/mathias.boe",
         "icon": "facebook.png",
@@ -17,7 +33,7 @@
         "textColor": "white"
     },
     {
-        "id": 2,
+        "id": 5,
         "title": "Snapchat",
         "link": "https://www.snapchat.com/add/mrboen94",
         "icon": "snapchat.png",
@@ -25,7 +41,7 @@
         "textColor": "black"
     },
     {
-        "id": 7,
+        "id": 6,
         "title": "Spotify",
         "link": "https://www.spotify.com/boemathias",
         "icon": "spotify.png",
@@ -33,19 +49,35 @@
         "textColor": "white"
     },
     {
-        "id": 5,
+        "id": 7,
         "title": "Instagram",
         "link": "https://www.instagram.com/boemathias",
         "icon": "instagram.png",
-        "backgroundColor": "white",
-        "textColor": "black"
+        "backgroundcolor": "white",
+        "textColor": "white"
     },
     {
-        "id": 4,
+        "id": 8,
+        "title": "Telegram",
+        "link": "https://t.me/joinchat/AAAAAFDWbUyHfha1eH_UgA",
+        "icon": "telegram.png",
+        "backgroundColor": "#0088cc",
+        "textColor": "white"
+    },
+    {
+        "id": 9,
         "title": "Untappd",
         "link": "https://untappd.com/user/mrboen94",
         "icon": "untappd.svg",
         "backgroundColor": "white",
         "textColor": "#fc0"
+    },
+    {
+        "id": 10,
+        "title": "Steam",
+        "link": "https://steamcommunity.com/id/mrboen94",
+        "icon": "steam.png",
+        "backgroundColor": "white",
+        "textColor": "black"
     }]
 }

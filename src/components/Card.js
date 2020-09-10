@@ -23,15 +23,27 @@ const StyledIcon = styled.div`
   margin: 0 auto;
 `
 
+function RenderMail(link) {
+  if (link !== "mailto:mrboen94@gmail.com") {
+    return true
+  }
+}
+
 export default function Card({ title, link, icon, color, text }) {
   return (
     <StyledDiv style={{ backgroundColor: color }}>
       <StyledIcon>
-        <img src={icon} />
+        <img src={icon} alt="icon" />
       </StyledIcon>
-      <Link to={link} style={{ color: text, textDecoration: "none" }}>
-        <h1>{title}</h1>
-      </Link>
+      {RenderMail(link) ? (
+        <Link to={link} style={{ color: text, textDecoration: "none" }}>
+          <h1>{title}</h1>
+        </Link>
+      ) : (
+        <a href={link} style={{ color: text, textDecoration: "none" }}>
+          <h1>{title}</h1>
+        </a>
+      )}
     </StyledDiv>
   )
 }

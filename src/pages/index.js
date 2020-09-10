@@ -16,6 +16,12 @@ const ImageWrapper = styled.div`
   color: white;
 `
 
+function RenderMail(data) {
+  if (data.link !== "mailto:mrboen94@gmail.com") {
+    return true
+  }
+}
+
 const socialData = Data.social
 
 const IndexPage = () => (
@@ -25,17 +31,29 @@ const IndexPage = () => (
       <Image />
     </ImageWrapper>
     <div style={{ maxWidth: `100%`, marginBottom: `1.45rem` }}>
-      {socialData.map(data => (
-        <Link to={data.link} style={{ textDecoration: "none" }}>
-          <Card
-            title={data.title}
-            link={data.link}
-            icon={data.icon}
-            color={data.backgroundColor}
-            text={data.textColor}
-          />
-        </Link>
-      ))}
+      {socialData.map(data =>
+        RenderMail(data) ? (
+          <Link to={data.link} style={{ textDecoration: "none" }}>
+            <Card
+              title={data.title}
+              link={data.link}
+              icon={data.icon}
+              color={data.backgroundColor}
+              text={data.textColor}
+            />
+          </Link>
+        ) : (
+          <a href={data.link} style={{ textDecoration: "none" }}>
+            <Card
+              title={data.title}
+              link={data.link}
+              icon={data.icon}
+              color={data.backgroundColor}
+              text={data.textColor}
+            />
+          </a>
+        )
+      )}
     </div>
   </Layout>
 )
